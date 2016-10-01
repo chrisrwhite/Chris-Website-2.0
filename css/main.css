@@ -120,8 +120,12 @@ textarea {
   
   /* Body Text Parameters  */
   --body-color:black;
-  --body-font:normal 15px/1em Calibri;
+  --body-font:normal 18px/1em Calibri;
   --body-text-indent: 48px;
+  
+  /* Annotation Text Parameters  */
+  --annotation-color:black;
+  --annotation-font:normal 15px/1em Calibri;
   
   
   /*menu parameters */
@@ -201,10 +205,17 @@ text-align: left;
 
 /*Tables and Figures*/
 h4 {
-font: bold var(--body-font);
-color: var(--body-color);
+font: bold var(--annotation-font);
+color: var(--annotation-color);
 padding-bottom:0px;
 
+}
+
+/*References*/
+h5 {
+font: var(--annotation-font);
+color: var(--annotation-color);	
+align: left:	
 }
 
 

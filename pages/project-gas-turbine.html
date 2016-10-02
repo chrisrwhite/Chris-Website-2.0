@@ -1,0 +1,322 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Chris's Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+                <section>
+                <div id = "main"><!-- user defined tag-->
+                    <!--http://learn.shayhowe.com/html-css/positioning-content/ how to position and group content-->
+                    <h1>Welcome to Chris's Website</h1>
+                    <img height =  "120" width="800" src ="../img/banner.jpg" align = "center" /><!-- insert banner image-->
+                </section>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Menu Code Goes Here -->
+                <section>
+                    <div id="wrap">
+                        <ul class="navbar">
+                            <li>
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Engineering</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Project 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Project 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Project 3</a>
+                                    </li>
+                                </ul>         
+                            </li>
+                            <li>
+                                <a href="#">Programming</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Project 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Project 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Project 3</a>
+                                    </li>
+                                </ul>         
+                            </li>
+                            <li>
+                                <a href="#">Music</a>
+                            </li>
+                            <li>
+                                <a href="../data/resume/resume.txt">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#">Places I've been</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div id = "secondary" >
+                    <section>
+                    <!-- Code Goes Here. -->
+					<h2>Project 3:</h2>
+                    <h2>Experimental Analysis of Gas Turbine Performance</h2>
+						
+					<h3>Abstract</h3>
+					<p>Airplanes primarily utilize gas turbine engines to generate thrust by transferring thermal energy from fuel into a working gas in order to extract mechanical work via turbine blades. Since aircraft operate at different altitudes, the engine performs differently the various pressures. Therefore gas turbine manufacturers want to increase the performance of an engine so that it operates optimally at certain application altitudes. The purpose of this experiment was to determine the optimal shaft rotation speed ranges to achieve the maximum engine efficiency of the individual components and the entire cycle for a SR-30 Minilab gas turbine engine. Pressure, temperature, shaft rotational speed, fuel flow, and thrust were measured for the cases between idle and full throttles, resulting in the following rotational speeds of 42,493 to 77,067 RPM in order to explore the effect of rotational speed on performance. The performance of the components is characterized through the efficiencies for the compressor, turbine, nozzle, and combustor. The performance of the engine cycle is characterized by the cycle efficiency (CE), specific thrust (ST), thrust specific fuel consumption (TSFC), power match (PM), and propulsive efficiency (PE). The experimental results were compared to the theoretical thrust, ST and TSFC. It was determined that the gas turbine engine operated most optimally at the middle throttle case at 66,590 RPM producing a thrust of 41.04&#177;0.42 N. This resulted in compressor, turbine, nozzle, and combustor efficiencies of 57.4&#177;0.1%, 50.5&#177;0.1%, 103.1&#177;0.08% and 757.3% respectively. The values for CE, ST, TSFC, PM, and PE are 11.1&#177;0.03%, 29.54 N , 223.2 s/m, 62.4&#177;1.0% and 6.11&#177;0.2% respectively.</p>
+
+<h3>Introduction and Methods</h3>
+<p>According to the National Oceanic and Atmospheric Administration, there are more than 87,000 flights take place in United States airspace daily, with air traffic controllers handling approximately 64 million takeoffs and landings every year [1]. In order to transport these people and cargo to their intended destinations, planes rely on gas turbine engines in a variety of forms such as turbojets, turbofans, and turbo props. Therefore it become more important to design compact, lightweight, and reliable gas turbine engines to supply this demand. Gas turbine engines can be analyzed using the idealized Brayton cycle, comprised of four main components: the compressor, combustion chamber, turbine, and nozzle without internal irreversabilities. The schematic and the T-s diagram of the Brayton cycle are illustrated in Figures 1 and 2; each component is analyzed using the steady-flow energy equation, expressed as</p>
+
+<style>
+    table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+    td.equation-number { text-align:right; width:2em; }
+</style>
+
+<table class="numbered-equation" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+                   (<i>q<sub>in</sub> - q <sub>out</sub>
+			</i>) -
+										(<i>w<sub>in</sub> - w <sub>out</sub>
+			</i>)
+										= <i>h<sub>e</sub> - h <sub>i</sub>
+			</i>
+		</td>
+		<td class="equation-number">(1)
+		</td>
+	</tr>
+</table>
+
+<p>where <i>q</i> is heat transfer, <i>w</i> is the work, and <i>h</i> is the enthalpy at the exit and inlet of the control volume. These components can be analyzed under the assumption that air behaves as a perfect gas, friction is negligible and the compression and expansion processes are fully reversible and isentropic.</p>
+
+<p>The ideal Brayton cycle is illustrated in Figure 2 begins with process 1-2 as air is drawn into compressor, resulting in an increase in pressure isentropically. Heat is transferred isobarically in process 2-3 as the compressed air flows in combustion chamber via combustion of fuel. The expanding heated air flows across turbine blades transferring thermal energy into kinematic energy to rotate the blades, providing work to drive the compressor isentropically in process 3-4. After exiting the turbine, the depleted fuel mixture passes through the nozzle at process 4-5 insentropically resulting in a pressure drop as the velocity of the gas is increased, producing thrust. Heat is rejected isobarically in process 5-1 as the exhaust gas enters the environment. A diffuser is found on actual gas turbine engines to slow down the air mass flow rate.</p>
+<style>
+    td.upper_line { border-top:solid 1px black; }
+    table.fraction { text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+    td.equation-number { text-align:right; width:2em; }
+
+</style>
+
+
+<!--How do do a fraction equation with the equation number aligned-->
+
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>comp</sub>
+						</i>  =   
+					</td>
+					<td nowrap="nowrap">
+						<i>h<sub>0<sub>2s</sub>
+							</sub>
+						</i> - <i>h<sub>0<sub>1</sub>
+							</sub>
+						</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						<i>h<sub>0<sub>2</sub>
+							</sub>
+						</i> - <i>h<sub>0<sub>1</sub>
+							</sub>
+						</i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+		(2)
+		</td>
+	</tr>
+</table>
+<!-- End of How do do a fraction equation with the equation number aligned-->
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>turb</sub>
+						</i>  =   
+					</td>
+					<td nowrap="nowrap">
+						<i>h<sub>0<sub>4</sub>
+							</sub>
+						</i> - <i>h<sub>0<sub>3</sub>
+							</sub>
+						</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						<i>h<sub>0<sub>4s</sub>
+							</sub>
+						</i> - <i>h<sub>0<sub>3</sub>
+							</sub>
+						</i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+		(3)
+		</td>
+	</tr>
+</table>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>nozz</sub>
+						</i>  =   
+					</td>
+					<td nowrap="nowrap">
+						<i>h<sub>0<sub>4</sub>
+							</sub>
+						</i> - <i>h<sub>5</sub>
+						</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						<i>h<sub>0<sub>4</sub>
+							</sub>
+						</i> - <i>h<sub>5<sub>s</sub>
+							</sub>
+						</i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+		(4)
+		</td>
+	</tr>
+</table>	
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>comb</sub>
+						</i>  =   
+					</td>
+					<td nowrap="nowrap">
+						(1 + <i>f</i>)<i>h<sub>0<sub>3</sub>
+							</sub>
+						</i> - <i>h<sub>0<sub>2</sub>
+							</sub>
+						</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						<i>fQ<sub>Jet A</sub>
+						</i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+		(5)
+		</td>
+	</tr>
+</table>	
+
+<p>where <i>f</i> = <i>
+		<sup>m<sub>fuel</sub>
+		</sup>&frasl;<sub>m<sub>air</sub>
+		</sub>
+	</i> and <i>Q<sub>Jet A</sub>
+	</i> is the heat of combustion for the jet fuel [4]. </p>					
+<p>The overall performance of the thermodynamic gas turbine engine cycle is characterized using the CE, ST, TSFC, PM, and PE. CE is the overall performance of the Brayton cycle through the ratio of the heat exiting and entering the system expressed as</p>
+
+
+
+
+
+
+
+
+
+
+<h3>Results and Discussion</h3>
+<h3>Conclusions</h3>
+<h3>References</h3>
+
+       <li>
+                                                                                                <h5>http://www.epa.gov/ozone/title6/phaseout/22phaseout.html</h5>
+                                                                                            </li>
+                    </section>     
+                </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

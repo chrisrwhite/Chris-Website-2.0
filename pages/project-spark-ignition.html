@@ -75,14 +75,16 @@
             <div id = "secondary" >
             	<section>
             		<!-- Code Goes Here. -->
-            		<h2>Project 3:</h2>
-            		<h2>Experimental Analysis of Gas Turbine Performance</h2>
+            		<h2>Project 4:</h2>
+            		<h2>Experimental Analysis of Spark Ignition Performance</h2>
 
             		<h3>Abstract</h3>
-            		<p>Airplanes primarily utilize gas turbine engines to generate thrust by transferring thermal energy from fuel into a working gas in order to extract mechanical work via turbine blades. Since aircraft operate at different altitudes, the engine performs differently the various pressures. Therefore gas turbine manufacturers want to increase the performance of an engine so that it operates optimally at certain application altitudes. The purpose of this experiment was to determine the optimal shaft rotation speed ranges to achieve the maximum engine efficiency of the individual components and the entire cycle for a SR-30 Minilab gas turbine engine. Pressure, temperature, shaft rotational speed, fuel flow, and thrust were measured for the cases between idle and full throttles, resulting in the following rotational speeds of 42,493 to 77,067 RPM in order to explore the effect of rotational speed on performance. The performance of the components is characterized through the efficiencies for the compressor, turbine, nozzle, and combustor. The performance of the engine cycle is characterized by the cycle efficiency (CE), specific thrust (ST), thrust specific fuel consumption (TSFC), power match (PM), and propulsive efficiency (PE). The experimental results were compared to the theoretical thrust, ST and TSFC. It was determined that the gas turbine engine operated most optimally at the middle throttle case at 66,590 RPM producing a thrust of 41.04&#177;0.42 N. This resulted in compressor, turbine, nozzle, and combustor efficiencies of 57.4&#177;0.1%, 50.5&#177;0.1%, 103.1&#177;0.08% and 757.3% respectively. The values for CE, ST, TSFC, PM, and PE are 11.1&#177;0.03%, 29.54 N , 223.2 s/m, 62.4&#177;1.0% and 6.11&#177;0.2% respectively.</p>
+
+            		<p>The majority of automobiles operate on the four-stroke internal composition (IC) engines in order to transfer chemical energy via a spark ignition (SI) process into mechanical work to drive pistons. Since IC engines produce useful torque over a limited range of crankshaft rotational speeds, automobile engine manufacturers increase engine performance by designing engines that flatten the torque-versus-rotational speed curve in order to have maximum torque between both high and low end speeds without sacrificing power output. The purpose of this experiment was to determine the optimal shaft rotation speed ranges to achieve the maximum engine efficiency for a Briggs & Stratton V-Twin OHV 16 engine by applying simulated parasitic loads via a D-100 Small Engine Dynamometer. Crank shaft angle, torque, shaft speed, and engine cylinder internal pressure were measured for single cycles while applying various fluid loads for the cases of low, middle, and full throttles. This range of loadings was used to explore the effect of parasitic loadings between low and high end torque on the actual engine. The experimental performance of the engine was evaluated based on the torque and power curves and the results were compared to published data from manufacturer [3]. The low throttle case achieved an optimal mechanical efficiency of 65.0&#177;1.73% at 1200 RPM. The middle throttle had the highest mechanical efficiency of 79.5&#177;0.83% at 1830 RPM. The full throttle case achieved an efficiency of 81.8&#177;1.13% at 1770 RPM.</p>
+
 
             		<h3>Introduction and Methods</h3>
-            		<p>According to the National Oceanic and Atmospheric Administration, there are more than 87,000 flights take place in United States airspace daily, with air traffic controllers handling approximately 64 million takeoffs and landings every year [1]. In order to transport these people and cargo to their intended destinations, planes rely on gas turbine engines in a variety of forms such as turbojets, turbofans, and turbo props. Therefore it become more important to design compact, lightweight, and reliable gas turbine engines to supply this demand. Gas turbine engines can be analyzed using the idealized Brayton cycle, comprised of four main components: the compressor, combustion chamber, turbine, and nozzle without internal irreversabilities. The schematic and the T-s diagram of the Brayton cycle are illustrated in Figures 1 and 2; each component is analyzed using the steady-flow energy equation, expressed as</p>
+            		<p>The U.S. Energy Information Administration predicts that the nominal price of petroleum will be $2.73 per gallon by 2016 as a result of the increasing trend present since 1998, when petroleum was $1.03 per gallon [1]. The automotive industry is severely impacted by the increase in fuel price coupled with the uncertainty of the Earth’s fossil fuel reserves. According to the law of conservation of energy, designing an engine of higher efficiency results in both environmental and economic incentives, since more energy is extracted from the fuel. This can be accomplished by maximizing the torque while holding it constant between low and high end speeds. In order to test and analyze a prototype IC engine, the Otto cycle is used to represent the actual four-stroke cycle as an idealized thermodynamic cycle with no internal irreversibilities and is illustrated in Figure 1a. Since the Otto cycle is executed in a closed system, it can be analyzed using the energy balance equation, expressed as</p>
 
             		<style>
             		table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
@@ -94,209 +96,72 @@
             				<tr>
             					<td>
             						(<i>q<sub>in</sub> - q <sub>out</sub>
-            					</i>) -
+            					</i>) +
             					(<i>w<sub>in</sub> - w <sub>out</sub>
             				</i>)
-            				= <i>h<sub>e</sub> - h <sub>i</sub>
-            			</i>
+            				= <i>&#8710;u</i>                                      (Btu/lb)
             		</td>
             		<td class="equation-number">(1)
             		</td>
             	</tr>
             </table>
 
-            <p>where <i>q</i> is heat transfer, <i>w</i> is the work, and <i>h</i> is the enthalpy at the exit and inlet of the control volume. These components can be analyzed under the assumption that air behaves as a perfect gas, friction is negligible and the compression and expansion processes are fully reversible and isentropic.</p>
+
+            <p>where <i>q</i> is heat transfer, <i>w</i> is the work, and <i>u</i> is the internal energy. It is assumed that air behaves as an ideal gas with negligible changes in kinetic and potential energy.</p>
+
+
+
+
+
+
+
 
             <img width =  "360" src ="..\img\project-gas-turbine-img\schematic.jpg"  align = "right"/>
 
             <h4>
-            	Figure 1: Brayton Cycle Schematic of Gas Turbine Engine [2 Reproduced by White C.]
+            	Figure 1: (a) P-V Diagrams for the Otto Cycle [5] and (b) Actual Four-Stroke Engine Cycle [5] (c) Ideal (solid) vs Actual (dashed) Torque and Power [6] Replicated by White C.
             </h4>
 
-            <p>The ideal Brayton cycle is illustrated in Figure 2 begins with process 1-2 as air is drawn into compressor, resulting in an increase in pressure isentropically. Heat is transferred isobarically in process 2-3 as the compressed air flows in combustion chamber via combustion of fuel. The expanding heated air flows across turbine blades transferring thermal energy into kinematic energy to rotate the blades, providing work to drive the compressor isentropically in process 3-4. After exiting the turbine, the depleted fuel mixture passes through the nozzle at process 4-5 insentropically resulting in a pressure drop as the velocity of the gas is increased, producing thrust. Heat is rejected isobarically in process 5-1 as the exhaust gas enters the environment. A diffuser is found on actual gas turbine engines to slow down the air mass flow rate.</p>
-
-            <center>
-            	<img width =  "360" src ="..\img\project-gas-turbine-img\ts.jpg"  align = "center"/>
-            </center>
-            <h4>
-            	Figure 2: Brayton Cycle T-s Diagram of Gas Turbine Engine [2 Reproduced by White C.]
-            </h4>
-            <style>
-            td.upper_line { border-top:solid 1px black; }
-            table.fraction { text-align: center; vertical-align: middle;
-            	margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
-            	td.equation-number { text-align:right; width:2em; }
-
-            	</style>
 
 
-            	<!--How do do a fraction equation with the equation number aligned-->
 
 
-            	<table class="display" cellpadding="0" cellspacing="0" width="100%">
-            		<tr>
-            			<td class="blank">&nbsp;</td>
-            			<td class="expression">
-            				<!--start of custom code-->
-            				<table class="fraction" align="center" cellpadding="0" cellspacing="0">
-            					<tr>
 
-            						<td rowspan="2" nowrap="nowrap">
-            							<i>&#951;<sub>comp</sub>
-            							</i>  =   
-            						</td>
-            						<td nowrap="nowrap">
-            							<i>h<sub>0<sub>2s</sub>
-            							</sub>
-            						</i> - <i>h<sub>0<sub>1</sub>
-            					</sub>
-            				</i>
-            			</td>
-            		</tr>
-            		<tr>
-            			<td class="upper_line">
-            				<i>h<sub>0<sub>2</sub>
-            				</sub>
-            			</i> - <i>h<sub>0<sub>1</sub>
-            		</sub>
-            	</i>
-            </td>
 
-        </tr>
 
-        <!--End of custom code-->	
-    </table>
-</td>
-<td class="eqnnumber" align="right">
-	(2)
-</td>
-</tr>
-</table>
-<!-- End of How do do a fraction equation with the equation number aligned-->
 
-<table class="display" cellpadding="0" cellspacing="0" width="100%">
-	<tr>
-		<td class="blank">&nbsp;</td>
-		<td class="expression">
-			<!--start of custom code-->
-			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
-				<tr>
 
-					<td rowspan="2" nowrap="nowrap">
-						<i>&#951;<sub>turb</sub>
-						</i>  =   
-					</td>
-					<td nowrap="nowrap">
-						<i>h<sub>0<sub>4</sub>
-						</sub>
-					</i> - <i>h<sub>0<sub>3</sub>
-				</sub>
-			</i>
-		</td>
-	</tr>
-	<tr>
-		<td class="upper_line">
-			<i>h<sub>0<sub>4s</sub>
-			</sub>
-		</i> - <i>h<sub>0<sub>3</sub>
-	</sub>
-</i>
-</td>
 
-</tr>
 
-<!--End of custom code-->	
-</table>
-</td>
-<td class="eqnnumber" align="right">
-	(3)
-</td>
-</tr>
-</table>
+            <p>The Otto cycle consists of a total of 6 processes, resulting in the crankshaft rotating a 720 ̊ per complete cycle. It begins with process 6-1 as a fuel-air mixture is drawn into the engine cylinder isobarically as the piston travels from top dead center (TDC) to bottom dead center (BDC), resulting in an increase in the cylinder volume. The mixture is then isentropically compressed in process 1-2 as the piston travels from BDC to TDC resulting in an increase in the pressure. Heat is transferred isochorically to the mixture in process 2-3 via ignition from spark plug found in SI engines. The fuel- air mixture expands in the cylinder performing work on the piston isentropically during the power stroke in process 3-4, driving the piston from TDC to BDC. Heat is rejected isochorically from the engine in process 4-5 at BDC. The mass of spent fuel is expelled from the engine to the environment in process 5-6 through the exhaust stroke and the entire cycle repeats. Each of the processes in the Otto cycle can be thermodynamically analyzed using Eq. (1) with the appropriate assumptions in order to determine work and heat transfer. The volume between BDC and TDC represents the displacement volume of the piston and the volume between TDC and the top of the cylinder represents the clearance volume where the combustion of the compressed fuel-air mixture occurs.</p>
 
-<table class="display" cellpadding="0" cellspacing="0" width="100%">
-	<tr>
-		<td class="blank">&nbsp;</td>
-		<td class="expression">
-			<!--start of custom code-->
-			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
-				<tr>
+            <p>The actual IC four-stroke engine P-V diagram has slight variations compared to the Otto cycle due to the behavior between the piston and the fuel-air mixture, resulting in the production of a certain amount of work per cycle as illustrated in Figure 1b. The work of the piston is determined through the integral of the product between the pressure within the cylinder and the differential cylinder volume, expressed as</p>
 
-					<td rowspan="2" nowrap="nowrap">
-						<i>&#951;<sub>nozz</sub>
-						</i>  =   
-					</td>
-					<td nowrap="nowrap">
-						<i>h<sub>0<sub>4</sub>
-						</sub>
-					</i> - <i>h<sub>5</sub>
-				</i>
-			</td>
-		</tr>
-		<tr>
-			<td class="upper_line">
-				<i>h<sub>0<sub>4</sub>
-				</sub>
-			</i> - <i>h<sub>5<sub>s</sub>
-		</sub>
-	</i>
-</td>
+            			<table class="numbered-equation" cellpadding="0" cellspacing="0">
+            				<tr>
+            					<td>
+            						<i>W<sub>p</sub> </i> =
+            					&#8750;<i>PdV</i>                                      (ft-lb)
+            		</td>
+            		<td class="equation-number">(2)
+            		</td>
+            	</tr>
+            </table>
 
-</tr>
+				
+<p>where <i>P</i> and <i>𝑉</i> are the pressure and volume of the cylinder respectively. As illustrated in Figure 1b, the gross work is the positive work is denoted by area A produced by the power stroke due to the interaction between the expanding gas and the piston. The negative work is denoted by area B, which is due to the pump work of the piston required to draw the fuel-air mixture in and expel exhaust. The resultant of the produced and consumed work for the four-stroke cycle is the net work, which determined by subtracting the pump work from the gross work. However the net work of the engine is only the amount of work exerted by the working fluid on the piston and is not the same work outputted by the engine.</p>
 
-<!--End of custom code-->	
-</table>
-</td>
-<td class="eqnnumber" align="right">
-	(4)
-</td>
-</tr>
-</table>	
+<p>Brake work is the available work produced by the engine, measured by the dynamometer and is determined by the product of the torque and the rotational speed of the output shaft. The brake work is less than the net work due to irreversabilities within the system in the form of heat transfer and friction, which are not accounted for by the net work. Therefore the mechanical efficiency is used to evaluate the performance of the engine, expressed as</p>
 
-<table class="display" cellpadding="0" cellspacing="0" width="100%">
-	<tr>
-		<td class="blank">&nbsp;</td>
-		<td class="expression">
-			<!--start of custom code-->
-			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
-				<tr>
 
-					<td rowspan="2" nowrap="nowrap">
-						<i>&#951;<sub>comb</sub>
-						</i>  =   
-					</td>
-					<td nowrap="nowrap">
-						(1 + <i>f</i>)<i>h<sub>0<sub>3</sub>
-					</sub>
-				</i> - <i>h<sub>0<sub>2</sub>
-			</sub>
-		</i>
-	</td>
-</tr>
-<tr>
-	<td class="upper_line">
-		<i>fQ<sub>Jet A</sub>
-		</i>
-	</td>
+                        <style>
+td.upper_line { border-top:solid 1px black; }
+table.fraction { text-align: center; vertical-align: middle;
+    margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+td.equation-number { text-align:right; width:2em; }
 
-</tr>
+                        </style>
 
-<!--End of custom code-->	
-</table>
-</td>
-<td class="eqnnumber" align="right">
-	(5)
-</td>
-</tr>
-</table>	
-
-<p>where <i>f</i> = <i>
-	<sup>m<sub>fuel</sub>
-	</sup>&frasl;<sub>m<sub>air</sub>
-</sub>
-</i> and <i>Q<sub>Jet A</sub>
-</i> is the heat of combustion for the jet fuel [4]. </p>					
-<p>The overall performance of the thermodynamic gas turbine engine cycle is characterized using the CE, ST, TSFC, PM, and PE. CE is the overall performance of the Brayton cycle through the ratio of the heat exiting and entering the system expressed as</p>
 
 <table class="display" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
@@ -327,12 +192,50 @@
 
 			<!--End of custom code-->	
 		</table>
+
+	</td>
+	<td>
+		=
+	</td>
+
 	</td>
 	<td class="eqnnumber" align="right">
 		(5)
 	</td>
 </tr>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <p>PE is the proportion of mechanical energy actually used to propel the aircraft by accounting for aerodynamic drag, gravity, and acceleration losses, expressed as</p>

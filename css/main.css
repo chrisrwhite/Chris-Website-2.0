@@ -103,7 +103,7 @@ textarea {
   --main-rect-color:white; 
   --all-text-color: black; /*all of the body test (actually its currently all text)*/ 
   
-  --main-width:800px;/* width of all the blocks */
+  --main-width:850px;/* width of all the blocks */
   --main-margin:25px auto;
 
   /* Main Header Parameters  */
@@ -211,6 +211,8 @@ padding-bottom:0px;
 
 }
 
+
+
 /*References*/
 h5 {
 font: var(--annotation-font);
@@ -218,6 +220,14 @@ color: var(--annotation-color);
 align: left:	
 }
 
+/*paragraph text without indent */
+h6 {
+	font: var(--body-font);
+color: var(--body-color);
+text-align: justify;
+	
+	
+}
 
 /*the horizontal line*/
 hr {

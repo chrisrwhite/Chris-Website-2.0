@@ -217,7 +217,9 @@ padding-bottom:0px;
 h5 {
 font: var(--annotation-font);
 color: var(--annotation-color);	
-align: left:	
+align: left;
+    margin: 0px;
+    padding: 0px;	
 }
 
 /*paragraph text without indent */
@@ -225,6 +227,8 @@ h6 {
 	font: var(--body-font);
 color: var(--body-color);
 text-align: justify;
+    margin: 0px;
+    padding: 0px;
 	
 	
 }

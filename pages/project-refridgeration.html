@@ -79,7 +79,7 @@
 <div id = "secondary" >
 	<section>
 		<!-- mini header for first blurb -->
-		<h2>Project 2:</h2>
+		<h2>Project 1:</h2>
 		<h2>Experimental Analysis of Vapor Compression Refrigeration Cycle Expansion Valves</h2>
 
 		<h3>Abstract</h3>
@@ -112,9 +112,9 @@ td.equation-number { text-align:right; width:2em; }
 		<br>
 
 		<center>
-			<img width =  "230" src ="..\img\project-refridgerator-img\block.jpg"  align = "left"/>
-			<img width =  "270" src ="..\img\project-refridgerator-img\Ts.jpg">
-			<img width =  "270" src ="..\img\project-refridgerator-img\ph.jpg"  align = "right"/>
+			<img width =  "259" src ="..\img\project-refridgerator-img\block.jpg"  align = "left"/>
+			<img width =  "268" src ="..\img\project-refridgerator-img\Ts.jpg">
+			<img width =  "250" src ="..\img\project-refridgerator-img\ph.jpg"  align = "right"/>
 		</center>
 			
 			<h4>Figure 1: (a) Refridgeration System Schematic [2], and (b) Temperature-Entropy for the Ideal (red) and Actual (blue) VCR Cycles [2] and (c) Pressure-Enthalpy Diagram [2] Replicated by White C.</h4>
@@ -181,7 +181,6 @@ table.fraction { text-align: center; vertical-align: middle;
 td.equation-number { text-align:right; width:2em; }
 			</style>
 
-
 			<table class="display" cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 					<td class="blank">&nbsp;</td>
@@ -231,7 +230,7 @@ td.equation-number { text-align:right; width:2em; }
 			<p>The experiments were performed on the Hampden Refrigeration Trainer, by running the cycle in forward (FWD) mode while monitoring temperature, pressure, and mass flow rate at specific points in the cycle. The actual CoP was experimentally determined for the TEV, CT, and HEV control by using the first law of thermodynamics. The locations of the instrumentation are displayed on a schematic of the actual VCR cycle in Figure 2.</p>
 
 			<center>
-				<img height =  "250" src ="..\img\project-refridgerator-img\instrumentation.jpg"  align = "middle"/>
+				<img width =  "500" src ="..\img\project-refridgerator-img\instrumentation.jpg"  align = "middle"/>
 			</center>
 
 			<h4>Figure 2: Hampden Refrigeration Trainer Schematic with Locations for the Following Instrumentation: Type-T Thermocouples, Sho-Rate "50" Model 1350E Flowmeter, and Pressure Transducers </h4>
@@ -247,21 +246,18 @@ td.equation-number { text-align:right; width:2em; }
 			<p>HEV control was established by slightly cracking the HEV needle and closing the CTV. The system was tested by adjusting the HEV to produce flow rates of 1.86&#177;0.364, 3.39&#177;0.363, and 4.77&#177;0.362 g/s. Temperature, pressure, and mass flow rate were measured at the locations displayed in Figure 2 at each flow rate. The actual HEV CoP values for each flow rate were 3.04&#177;0.13, 2.63&#177;0.11, and 1.62&#177;0.06 respectfully determined using Eq. (5) and are displayed in Figure 3.</p>
 
 			<center>
-				<img width =  "500" src ="..\img\project-refridgerator-img\PEdia.jpg"  align = "center"/>
+				<img width =  "633" src ="..\img\project-refridgerator-img\PEdia.jpg"  align = "center"/>
 			</center>
 			<center>
-				<img width =  "500" src ="..\img\project-refridgerator-img\TEdia.jpg"  align = "center"/>
+				<img width =  "624" src ="..\img\project-refridgerator-img\TEdia.jpg"  align = "center"/>
 			</center>
 
 			<h4>Figure 3: (a) Pressure-Enthalpy and (b) Temperature-Entropy Diagrams for Ideal (red) and Actual (blue) VCR Cycle Processed in MATLAB with CoolProps</h4>
 
-
 			<p>While the VCR cycle is a realistic model of the actual cycle, there are differences between 3 of the stages due irreverabilities occurring throughout the refrigeration system. The two significant sources of irreversabilites are piping losses and unwanted heat transfer with the environment, the effects of which are displayed in Figure 3. Piping losses have a minimal effect on the cycle occurring in the condenser (Stages 3 - 4) and the evaporator (Stages 7 - 8.) These losser are the result of fluid friction against the inner surface of the piping and components under the no slip boundary condition. Within both the condenser and evaporator, heat lost and gained increases with respect to mass flow as shown in Table 1. The most significant source of irreversibility occurs in the compression process due to entropy generation from friction between the vapor and the interior of the pump. Unlike the ideal isentropic process, the actual VCR cycle compressor significantly increases temperature of the vapor resulting in entropy generation due to the friction and heat transfer. In Table 1, compressor efficiency increased with mass flow rate, with the exception of the HEV at 4.77g/s, which was due to the high vapor mass flow forcing the compressor to apply significantly more work resulting in a low efficiency in comparison to the ideal compression process.</p>
 			<center>
-
 				<h4>Table 1: VCR Mass Flow Rate, Heat Lost, Heat Gained, and Compressor Efficiency for Each Expansion Valve</h4>
-
-				<img width =  "600" src ="..\img\project-refridgerator-img\table.jpg" />
+				<img width =  "706" src ="..\img\project-refridgerator-img\table.jpg" />
 			</center>
 
 			<p>Furthermore in the ideal cycle, refrigerant leaves the evaporator as a saturated vapor and enters the compressor as a saturated vapor, whereas in the actual cycle, the refrigerant may degrade in quality, resulting in condensation entering and damaging the compressor. Therefore actual refrigeration systems add a few extra degrees of super heat to the refrigerant in the evaporator in order to superheat the refrigerant vapor to ensure that the refrigerant is fully vaporized throughout the compression process [2]. In addition to the superheating process, a component called a suction accumulator, located between Stages 8 and 1, ensures that no condensed liquid enters the compressor by separating the condensed liquid from the vapor. Accumulators have a metering ejector device that vaporizes the liquid built up in a reservoir.</p>
@@ -271,8 +267,7 @@ td.equation-number { text-align:right; width:2em; }
 			<p>Irreverabilities have a negative effect on refrigerator performance and therefore the actual CoP is less than the ideal CoP. The primary source of this decrease is due to the entropy generation within the compressor in the actual cycle. It was observed that the ideal CoP increases with respect to mass flow rate according to Eq. (5), since the refrigerant enters the compressor as soon as it reaches the saturated vapor line, resulting in a small heat lost region in Figure 3. When compared to the actual cycle which has a much greater heat lost region, CoP decreases because the heat transfer is similar to the value of the compressor work based on Eq. (5). While the ideal and actual CoP values may behave differently, it is a result of the entropy generation within the compressor that is not accounted for in isentropic process in the ideal cycle. Despite the irreversibilities occurring in the compressor, the ideal VCR cycle is a valid model for the actual cycle since the error bars associated with the actual CoP values are insignificant in Figure 4.</p>
 
 			<center>
-				<img width =  "600" src ="..\img\project-refridgerator-img\COP.jpg" />
-
+				<img width =  "783" src ="..\img\project-refridgerator-img\COP.jpg" />
 				<h4>Figure 4: Actual and Ideal VCR Cycle CoP for Each Expansion Valve</h4>
 			</center>
 

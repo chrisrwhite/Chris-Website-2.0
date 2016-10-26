@@ -82,7 +82,6 @@
 
             		<p>The majority of automobiles operate on the four-stroke internal composition (IC) engines in order to transfer chemical energy via a spark ignition (SI) process into mechanical work to drive pistons. Since IC engines produce useful torque over a limited range of crankshaft rotational speeds, automobile engine manufacturers increase engine performance by designing engines that flatten the torque-versus-rotational speed curve in order to have maximum torque between both high and low end speeds without sacrificing power output. The purpose of this experiment was to determine the optimal shaft rotation speed ranges to achieve the maximum engine efficiency for a Briggs & Stratton V-Twin OHV 16 engine by applying simulated parasitic loads via a D-100 Small Engine Dynamometer. Crank shaft angle, torque, shaft speed, and engine cylinder internal pressure were measured for single cycles while applying various fluid loads for the cases of low, middle, and full throttles. This range of loadings was used to explore the effect of parasitic loadings between low and high end torque on the actual engine. The experimental performance of the engine was evaluated based on the torque and power curves and the results were compared to published data from manufacturer [3]. The low throttle case achieved an optimal mechanical efficiency of 65.0&#177;1.73% at 1200 RPM. The middle throttle had the highest mechanical efficiency of 79.5&#177;0.83% at 1830 RPM. The full throttle case achieved an efficiency of 81.8&#177;1.13% at 1770 RPM.</p>
 
-
             		<h3>Introduction and Methods</h3>
             		<p>The U.S. Energy Information Administration predicts that the nominal price of petroleum will be $2.73 per gallon by 2016 as a result of the increasing trend present since 1998, when petroleum was $1.03 per gallon [1]. The automotive industry is severely impacted by the increase in fuel price coupled with the uncertainty of the Earth’s fossil fuel reserves. According to the law of conservation of energy, designing an engine of higher efficiency results in both environmental and economic incentives, since more energy is extracted from the fuel. This can be accomplished by maximizing the torque while holding it constant between low and high end speeds. In order to test and analyze a prototype IC engine, the Otto cycle is used to represent the actual four-stroke cycle as an idealized thermodynamic cycle with no internal irreversibilities and is illustrated in Figure 1a. Since the Otto cycle is executed in a closed system, it can be analyzed using the energy balance equation, expressed as</p>
 
@@ -107,18 +106,20 @@
             </table>
 
 
-            <p>where <i>q</i> is heat transfer, <i>w</i> is the work, and <i>u</i> is the internal energy. It is assumed that air behaves as an ideal gas with negligible changes in kinetic and potential energy.</p>
+            <h6>where <i>q</i> is heat transfer, <i>w</i> is the work, and <i>u</i> is the internal energy. It is assumed that air behaves as an ideal gas with negligible changes in kinetic and potential energy.</h6>
 
-
-            <img width =  "917" src ="..\img\project-spark-ignition-img\PVOutputScaled.jpg"  align = "center"/>
-
+            <img width =  "357" src ="..\img\project-spark-ignition-img\otto.jpg"  align = "left"/>
+            <img width =  "364" src ="..\img\project-spark-ignition-img\actual.jpg"  align = "right"/>
+			
+			<center>
+            <img width =  "368" src ="..\img\project-spark-ignition-img\torquevspower.jpg"  align = "center"/>	
+			</center>	
+			
             <h4>
-            	Figure 1: (a) P-V Diagrams for the Otto Cycle [5] and (b) Actual Four-Stroke Engine Cycle [5] (c) Ideal (solid) vs Actual (dashed) Torque and Power [6] Replicated by White C.
+            	Figure 1: (a) P-V Diagrams for the Otto Cycle [5], (b) Actual Four-Stroke Engine Cycle [5], and (c) Ideal (solid) vs Actual (dashed) Torque and Power [6] Replicated by White C.
             </h4>
 
-
-
-            <p>The Otto cycle consists of a total of 6 processes, resulting in the crankshaft rotating a 720 ̊ per complete cycle. It begins with process 6-1 as a fuel-air mixture is drawn into the engine cylinder isobarically as the piston travels from top dead center (TDC) to bottom dead center (BDC), resulting in an increase in the cylinder volume. The mixture is then isentropically compressed in process 1-2 as the piston travels from BDC to TDC resulting in an increase in the pressure. Heat is transferred isochorically to the mixture in process 2-3 via ignition from spark plug found in SI engines. The fuel- air mixture expands in the cylinder performing work on the piston isentropically during the power stroke in process 3-4, driving the piston from TDC to BDC. Heat is rejected isochorically from the engine in process 4-5 at BDC. The mass of spent fuel is expelled from the engine to the environment in process 5-6 through the exhaust stroke and the entire cycle repeats. Each of the processes in the Otto cycle can be thermodynamically analyzed using Eq. (1) with the appropriate assumptions in order to determine work and heat transfer. The volume between BDC and TDC represents the displacement volume of the piston and the volume between TDC and the top of the cylinder represents the clearance volume where the combustion of the compressed fuel-air mixture occurs.</p>
+            <p>The Otto cycle consists of a total of 6 processes, resulting in the crankshaft rotating a 720&deg; per complete cycle. It begins with process 6-1 as a fuel-air mixture is drawn into the engine cylinder isobarically as the piston travels from top dead center (TDC) to bottom dead center (BDC), resulting in an increase in the cylinder volume. The mixture is then isentropically compressed in process 1-2 as the piston travels from BDC to TDC resulting in an increase in the pressure. Heat is transferred isochorically to the mixture in process 2-3 via ignition from spark plug found in SI engines. The fuel- air mixture expands in the cylinder performing work on the piston isentropically during the power stroke in process 3-4, driving the piston from TDC to BDC. Heat is rejected isochorically from the engine in process 4-5 at BDC. The mass of spent fuel is expelled from the engine to the environment in process 5-6 through the exhaust stroke and the entire cycle repeats. Each of the processes in the Otto cycle can be thermodynamically analyzed using Eq. (1) with the appropriate assumptions in order to determine work and heat transfer. The volume between BDC and TDC represents the displacement volume of the piston and the volume between TDC and the top of the cylinder represents the clearance volume where the combustion of the compressed fuel-air mixture occurs.</p>
 
             <p>The actual IC four-stroke engine P-V diagram has slight variations compared to the Otto cycle due to the behavior between the piston and the fuel-air mixture, resulting in the production of a certain amount of work per cycle as illustrated in Figure 1b. The work of the piston is determined through the integral of the product between the pressure within the cylinder and the differential cylinder volume, expressed as</p>
 
@@ -134,7 +135,7 @@
             </table>
 
 				
-<p>where <i>P</i> and <i>V</i> are the pressure and volume of the cylinder respectively. As illustrated in Figure 1b, the gross work is the positive work is denoted by area A produced by the power stroke due to the interaction between the expanding gas and the piston. The negative work is denoted by area B, which is due to the pump work of the piston required to draw the fuel-air mixture in and expel exhaust. The resultant of the produced and consumed work for the four-stroke cycle is the net work, which determined by subtracting the pump work from the gross work. However the net work of the engine is only the amount of work exerted by the working fluid on the piston and is not the same work outputted by the engine.</p>
+<h6>where <i>P</i> and <i>V</i> are the pressure and volume of the cylinder respectively. As illustrated in Figure 1b, the gross work is the positive work is denoted by area A produced by the power stroke due to the interaction between the expanding gas and the piston. The negative work is denoted by area B, which is due to the pump work of the piston required to draw the fuel-air mixture in and expel exhaust. The resultant of the produced and consumed work for the four-stroke cycle is the net work, which determined by subtracting the pump work from the gross work. However the net work of the engine is only the amount of work exerted by the working fluid on the piston and is not the same work outputted by the engine.</h6>
 
 <p>Brake work is the available work produced by the engine, measured by the dynamometer and is determined by the product of the torque and the rotational speed of the output shaft. The brake work is less than the net work due to irreversabilities within the system in the form of heat transfer and friction, which are not accounted for by the net work. Therefore the mechanical efficiency is used to evaluate the performance of the engine, expressed as</p>
 
@@ -199,12 +200,7 @@ td.equation-number { text-align:right; width:2em; }
 
 			<!--End of custom code-->	
 		</table>
-
 	</td>
-
-
-
-	
 	</td>
 	<td class="eqnnumber" align="right">
 		(3)
@@ -214,45 +210,34 @@ td.equation-number { text-align:right; width:2em; }
 
 
 
-<p>where <i>w<sub>b</sub></i> is brake work, <i>&#964;</i>  is torque, <i>RPM</i> is the angular velocity of the output shaft, and <i>w<sub>net</sub></i> is the net work determined using Eq. (2). The gross brake horsepower from Figure 1b is used for the brake horsepower since it is the measure of available power via the output shaft without parasitic loadings, whereas net brake horsepower includes the parasitic loads that rob the system of power.</p>
-
+<h6>where <i>w<sub>b</sub></i> is brake work, <i>&#964;</i>  is torque, <i>RPM</i> is the angular velocity of the output shaft, and <i>w<sub>net</sub></i> is the net work determined using Eq. (2). The gross brake horsepower from Figure 1b is used for the brake horsepower since it is the measure of available power via the output shaft without parasitic loadings, whereas net brake horsepower includes the parasitic loads that rob the system of power.</h6>
 
 <p>In the actual four-stroke engine, the amount of fuel-air mixture entering the cylinders from the carburetor is controlled through by a butterfly valve located at the upstream end of the intake system by controlling the flow rate via constriction or obstruction during each cycle. The throttle is used to control the desired power or speed of the output shaft of the engine.</p>
 
-
-
 <p>In the current study, the four-stroke IC engine efficiency was experimentally determined for low, middle, and full throttles while applying parasitic loadings. The actual cycle was compared to the idealized Otto cycle and published data [3] in order to validate the experimental process.</p>
-
 
 <p>The experiments were performed on an instrumented Briggs & Stratton V-Twin OHV 16 engine with a D-100 Small Engine Dynamometer attached to the engine output shaft. Crank shaft angle, torque, shaft speed, and pressure were measured for 3 complete cycles for various fluid loadings between minimum and maximum water flow rate via the dynamometer at low, middle, and full constant throttle settings. The experimental schematic and locations of the instrumentation are illustrated in Figure 2.</p>
 
-
-
 <center>
-	<img width =  "600" src ="..\img\project-spark-ignition-img\instrumentation.jpg"  align = "center"/>
+	<img width =  "630" src ="..\img\project-spark-ignition-img\instrumentation.jpg"  align = "center"/>
 </center>
-
-
 
 <h4>
 	Figure 2: Experimental Four-Stroke Engine Schematic with Instrumentation Locations: AutoPSI Pressure Sensor, Strain Gauge for Torque, Tachometer for Shaft Rotational Speed, and Optical Encoder for Crankshaft Angle [White C.]
 </h4>
 
-
 <h3>Results and Discussion</h3>
 
-<p>The following experiments were considered: (1) low throttle, (2) middle throttle, and (3) full throttle.</p>
+<p>The following experimental throttle positions were considered: (1) low, (2) middle, and (3) full.</p>
 
 <p>The operation of the Briggs & Stratton V-Twin OHV 16 was initiated according to startup procedure in the Operating Instructions at a laboratory temperature of 75.2 &deg;F and barometric pressure of 14.7 psi[3]. For each throttle case, the butterfly valve was adjusted to the corresponding throttle position, where it remained for the duration of the loadings. The range of loadings on the output shaft was controlled via water flow rate, adjusted gradually from 0 to 10 GPM via the D-100 Small Engine Dynamometer in order to observe the variation in engine mechanical efficiency between low to high output shaft speed. Crankshaft angle, torque, shaft speed, and pressure were recorded for approximately 50 loadings for each throttle case at the locations illustrated in Figure 2. P-V diagrams for each throttle case were generated actual four- stroke cycles in Figure 3. The engine efficiencies for the low, middle, or high throttle were determine for each case using Eq. (3) and are displayed in Figure 4a. Error in torque and power was sensor calibration, evaluated standard deviation based on variation in measurements in order to determine uncertainty at 95% confidence.</p>
-
-
 
 <p>The following experiments were considered: (1) idle at 42,493 RPM, (2) low throttle at 53,676 RPM, (3) middle throttle at 66,590 RPM, and (4) full throttle at 77,067 RPM.</p>
 
 <p>The operation of the SR-30 Minilab gas turbine engine was initiated according to startup procedure in the Operating Instructions at a laboratory temperature of 25 &deg;C and barometric pressure of 101.4 kPa [3]. For each throttle case, the fuel intake valve was adjusted to the corresponding throttle position, where it remained until the gas turbine reached steady state. Steady state was defined to be when the fluxuations in shaft speed fluctuations were within &#177;50 RPM. The T-s diagrams for the actual land ideal cycles were generated for each throttle case in Figure 4. The efficiencies for the 300 compressor, turbine, nozzle, and combustor were determined as well as the CE, ST, TSFC, PM, and PE for idle, low, middle, and full throttles displayed in Figure 5. The experimentally determined values were compared to the theoretical thrust, ST, and TSFC displayed in Figure 5d.</p>
 
 <center>
-<img width =  "500" src ="..\img\project-spark-ignition-img\ExpPVMechEff.jpg"  align = "center"/>
+<img width =  "635" src ="..\img\project-spark-ignition-img\ExpPVMechEff.jpg"  align = "center"/>
 </center>
 
 <h4>
@@ -278,8 +263,24 @@ would be transferred into the output shaft.</p>
 <p>Figure 3b shows that mechanical increases with loading, with a mechanical efficiency of 0 at no loading, since no usable work is being outputted from the engine. When a loading is applied to the output shaft, the engine is transmitting power out of the engine in order to drive the shaft to rotate under the loading. As the loading increases, the rotational speed decreases and the amount of useful power produced increases. Mechanical efficiency for the middle and full throttle cases peaks at approximately between 75 and 80%. The mechanical efficiency error was below 0.13, indicating that the error was insignificant in affecting the result.</p>
 
 <center>
-<img width =  "750" src ="..\img\project-spark-ignition-img\ExpResults.jpg"  align = "center"/>
+<img width =  "549" src ="..\img\project-spark-ignition-img\torquevsrpm.jpg"  align = "center"/>
 </center>
+<center>
+<img width =  "537" src ="..\img\project-spark-ignition-img\powervsrpm.jpg"  align = "center"/>
+</center>
+<center>
+<img width =  "536" src ="..\img\project-spark-ignition-img\shaftpowervsrpm.jpg"  align = "center"/>
+</center>
+<center>
+<img width =  "534" src ="..\img\project-spark-ignition-img\grosspowervsrpm.jpg"  align = "center"/>
+</center>
+<center>
+<img width =  "527" src ="..\img\project-spark-ignition-img\pumppowervsrpm.jpg"  align = "center"/>
+</center>
+<center>
+<img width =  "591" src ="..\img\project-spark-ignition-img\throttlepowervsrpm.jpg"  align = "center"/>
+</center>
+
 
 <h4>
 	Figure 4: Low, Middle, and Full Throttle (a) Torque, (b) Power, (c) and Power with Briggs & Stratton Curve Fit Error, (d) Gross Power, (e) Pump Power, and (f) Overall Power for Experimental and Otto Cycle vs Speed
